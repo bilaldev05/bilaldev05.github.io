@@ -19,19 +19,21 @@
     body {
       font-family: 'Inter', sans-serif;
       scroll-behavior: smooth;
+      background: #0f172a;
+      color: #f3f4f6;
     }
 
     /* Navbar */
     nav.navbar {
       backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.8) !important;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      background: rgba(15, 23, 42, 0.9) !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
       transition: all 0.3s ease-in-out;
     }
     nav.navbar .nav-link {
       font-weight: 600;
       margin: 0 8px;
-      position: relative;
+      color: #f3f4f6 !important;
     }
     nav.navbar .nav-link::after {
       content: '';
@@ -39,7 +41,7 @@
       height: 2px;
       display: block;
       margin: auto;
-      background: #3b82f6;
+      background: #06b6d4;
       transition: width .3s;
     }
     nav.navbar .nav-link:hover::after {
@@ -96,13 +98,14 @@
       margin-bottom: 20px;
       position: relative;
       display: inline-block;
+      color: #ffffff;
     }
     h2::after {
       content: "";
       position: absolute;
       width: 50%;
       height: 3px;
-      background: linear-gradient(90deg, #6366f1, #3b82f6);
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
       left: 25%;
       bottom: -10px;
       border-radius: 2px;
@@ -112,9 +115,11 @@
     .card {
       border: none;
       border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
       transition: transform 0.35s ease, box-shadow 0.35s ease;
       overflow: hidden;
+      background: #1e293b;
+      color: #f3f4f6;
     }
     .card img {
       transition: transform 0.4s ease;
@@ -124,7 +129,7 @@
     }
     .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.5);
     }
 
     /* Skills */
@@ -135,13 +140,13 @@
       border-radius: 25px;
       padding: 10px 18px;
       font-weight: 600;
-      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
       color: white;
       transition: transform 0.3s ease, background 0.3s ease;
     }
     .skill-badge:hover {
       transform: scale(1.1);
-      background: linear-gradient(135deg, #3b82f6, #06b6d4);
+      background: linear-gradient(135deg, #06b6d4, #3b82f6);
     }
 
     /* Contact */
@@ -170,9 +175,9 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Bilal</a>
+      <a class="navbar-brand fw-bold text-white" href="#">Bilal</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -208,7 +213,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="p-section bg-light">
+  <section id="projects" class="p-section">
     <div class="container">
       <h2 class="text-center mb-5">Projects</h2>
       <div class="row g-4">
